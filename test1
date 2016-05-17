@@ -1,0 +1,11 @@
+Enter file contents here//Make a floor, with default checkerboard texture and tinted blue
+VR.floor({ color: 'lightblue' });
+//make a sphere, using shiny, metal material. make it a bit bigger and move it up
+VR.sphere()
+  .setMaterial('metal')
+  .setScale(1.4)
+  .moveTo(0, 1, 0);
+//make a torus, using wood material. Move it up and over
+VR.torus()
+  .setMaterial('wood')
+  .moveTo(2, 1, 0.5);
